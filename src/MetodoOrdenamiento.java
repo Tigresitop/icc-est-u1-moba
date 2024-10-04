@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class MetodoOrdenamiento {
 
-    // Método para crear el arreglo
     public int[] crearArray() {
         Scanner leer = new Scanner(System.in);
         int tamanio = leerEnteroValido(leer, false); 
@@ -50,7 +49,6 @@ public class MetodoOrdenamiento {
         }
     }
 
-    // Método para imprimir el arreglo
     public void printArreglo(int[] arreglo) {
         System.out.println("Arreglo ordenado:");
         for (int num : arreglo) {
@@ -59,7 +57,7 @@ public class MetodoOrdenamiento {
         System.out.println();
     }
 
-    // Método para leer enteros válidos
+
     public static int leerEnteroValido(Scanner s, boolean numerosNegativos) {
         int numero;
         do {
