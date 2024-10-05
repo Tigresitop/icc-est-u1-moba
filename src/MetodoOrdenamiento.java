@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MetodoOrdenamiento {
 
-    public int[] crearArray() {
+    public int[] crearArrays() {
         Scanner leer = new Scanner(System.in);
         int tamanio = leerEnteroValido(leer, false); 
 
@@ -32,7 +32,7 @@ public class MetodoOrdenamiento {
                 System.out.println("Comparando arreglo[" + j + "]=" + arreglo[j] + " y arreglo[" + (j + 1) + "]=" + arreglo[j + 1]);
 
                 if (arreglo[j] > arreglo[j + 1]) {
-                    // Intercambio
+                    // Intercambio. 
                     aux = arreglo[j];
                     arreglo[j] = arreglo[j + 1];
                     arreglo[j + 1] = aux;
